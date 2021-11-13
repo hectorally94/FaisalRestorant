@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    tools:context=".Activities.Login">
+    <ImageView
+        android:id="@+id/imgseat"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:textColorHint="@color/greentextviewcolor"
+
+        android:backgroundTint="#ffffff"
+        android:id="@+id/textInput1"
+        android:layout_below="@+id/imgseat"
+        android:layout_marginTop="80dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your google email "
+            android:inputType="textEmailAddress"
+            android:id="@+id/loginEmail"
+            android:textColorHint="@color/greentextviewcolor"
+            android:textColor="#000"
+            app:backgroundTint="#ffffff"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:textColorHint="@color/greentextviewcolor"
+        android:id="@+id/textInput2"
+        android:backgroundTint="#ffffff"
+        android:layout_below="@+id/textInput1"
+        android:layout_marginTop="10dp"
+        app:passwordToggleEnabled="true"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:id="@+id/loginPass"
+            android:textColorHint="@color/greentextviewcolor"
+            android:textColor="#000"
+            app:backgroundTint="#ffffff"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/textInput2"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:textColor="@color/greentextviewcolor"
+        android:textSize="16sp"
+        />
+    <!-- android:onClick="login" -->
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:background="#fff"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

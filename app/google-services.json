@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1072261996732",
+    "project_id": "faisalrestorant",
+    "storage_bucket": "faisalrestorant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072261996732:android:db056bd99a64de4b07f0b9",
+        "android_client_info": {
+          "package_name": "com.prospect.faisalrestorant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072261996732-uh6ul5bvoguuv5a0o4vdsd0momn7o0qu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTdFvRyO2S0rd4h3tLC0TwxmeNO6JZ_Rk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1072261996732-uh6ul5bvoguuv5a0o4vdsd0momn7o0qu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

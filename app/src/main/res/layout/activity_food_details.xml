@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Activities.FoodDetails">
+
+<TextView
+    android:id="@+id/TextViewpce"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="40dp"
+    android:layout_marginStart="40dp"
+    android:layout_marginRight="26dp"
+    android:backgroundTint="#ffffff"
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/greentextviewcolor"
+    android:text="Odering"
+    android:textAlignment="center"
+    android:textSize="45dp"
+    android:textStyle="bold">
+</TextView>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_centerVertical="true"
+    android:elevation="15dp"
+    app:cardBackgroundColor="#fff"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/corners3"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextViewname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Nquantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Quantity:"
+                android:textColor="@color/greentextviewcolor"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/decrement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/corners3"
+                android:onClick="decrementquantity"
+                android:text="-"
+                android:textSize="20sp"
+
+                />
+
+            <TextView
+                android:id="@+id/quantitychange_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="1"
+                android:textAllCaps="true"
+                android:textColor="@color/greentextviewcolor"
+                android:textSize="30sp" />
+
+
+            <Button
+                android:id="@+id/increment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/corners3"
+                android:onClick="incrementquantity"
+                android:text="+"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/TextViewname"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/greentextviewcolor"
+            android:textSize="35sp">
+        </TextView>
+        <TextView
+            android:id="@+id/toTextfb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#ffffff"
+            android:layout_below="@+id/linear"
+            android:text="FBU"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/greentextviewcolor"
+            android:textSize="45dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/Texttotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="40dp"
+            android:layout_below="@+id/linear"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="110dp"
+            android:layout_marginRight="26dp"
+            android:backgroundTint="#ffffff"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/greentextviewcolor"
+            android:textSize="45dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextViewprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="82dp"
+            android:layout_marginRight="26dp"
+            android:backgroundTint="#ffffff"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="35dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/Textfb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:backgroundTint="#ffffff"
+            android:text="FBU"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/linear"
+            android:textColor="#000"
+            android:text="TOTAL"
+            android:textStyle="bold"
+            android:textSize="35sp">
+        </TextView>
+        <LinearLayout
+            android:id="@+id/linearo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/idprint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ic_baseline_print_24"
+                />
+
+
+
+            <Button
+                android:id="@+id/idaddlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="75dp"
+                android:background="@drawable/ic_baseline_add_shopping_cart_24"
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

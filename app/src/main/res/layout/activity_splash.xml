@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#ffffff"
+android:fitsSystemWindows="true"
+    tools:context=".Activities.Splash">
+
+<ImageView
+            android:id="@+id/imgseat"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="392dp"
+            android:layout_height="58dp"
+            android:layout_below="@+id/imgseat"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/greentextviewcolor"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            tools:ignore="RtlCompat" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idabout"
+            android:layout_marginTop="100dp"
+            android:text="Powered by PROSPECT"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic"
+            android:textSize="7dp"
+            android:textColor="@color/greentextviewcolor"
+            >
+        </TextView>
+
+    </RelativeLayout>

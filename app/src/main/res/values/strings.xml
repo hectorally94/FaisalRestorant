@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Istanbul Restaurant</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_cart">Shopping cart</string>
+    <string name="checkout">Print</string>
+    <string name="continue_shopping">Back </string>
+    <string name="sub_total">Sub total:</string>
+    <string name="product_name">Sleek black top</string>
+    <string name="quantity">1</string>
+    <string name="price">100 $</string>
+    <string name="remove_from_cart">Remove</string>
+
+
+
+
+</resources>

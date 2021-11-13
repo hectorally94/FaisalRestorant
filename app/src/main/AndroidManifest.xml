@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.prospect.faisalrestorant">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/Theme.FaisalRestorant"
+        >
+        <activity android:name=".UserActitities.CheckoutActivity"
+            />
+        <activity android:name=".Activities.FoodActitvity" />
+        <activity android:name=".Activities.FoodDetails" />
+        <activity android:name=".Bluetooth.DeviceList" />
+        <activity android:name=".UserActitities.OderDelete" />
+
+        <activity android:name=".Activities.AddRole" />
+        <activity android:name=".UserActitities.UserPanel" >
+
+        </activity>
+        <activity
+            android:name=".Activities.Splash"
+            android:theme="@style/NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+    </activity>
+        <activity
+            android:name=".Activities.AddUser"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Activities.AddProduct"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Activities.Report"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Activities.Login"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Activities.AdminPanel"
+            android:theme="@style/NoActionBar">
+        </activity>
+        <activity android:name=".MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>
